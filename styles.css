@@ -1903,18 +1903,82 @@ a:hover {
         gap: 2.5rem;
     }
     
+    .about-stats-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .category-tabs .tab-sub {
+        display: none !important;
+    }
+    
+    .category-tabs .tab-button {
+        padding: 0.5rem 0.8rem !important;
+    }
+    
+    .category-tabs {
+        gap: 0.35rem !important;
+        padding: 0.5rem !important;
+    }
+    
+    .category-header-block {
+        padding: 1.5rem !important;
+        border-left-width: 4px !important;
+        margin-bottom: 1.5rem !important;
+    }
+    
+    .cat-number-badge {
+        display: none !important;
+    }
+    
+    .subcategory-card {
+        padding: 1.25rem !important;
+    }
+    
+    .promise-main-card {
+        padding: 1.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    .promise-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+    
+    .promise-item {
+        padding: 1.25rem !important;
+    }
+    
+    .inquiry-cart-panel {
+        padding: 1.25rem !important;
+    }
+    
+    .inquiry-form-panel {
+        padding: 1.25rem !important;
+    }
+    
     .form-group-row {
         grid-template-columns: 1fr;
         gap: 1.25rem;
     }
     
-    .inquiry-form-panel {
-        padding: 1.5rem;
+    .contact-card {
+        padding: 1.25rem !important;
+        gap: 1rem !important;
+    }
+    
+    .map-card-wrapper {
+        padding: 0.5rem !important;
+        border-radius: var(--radius-md) !important;
+    }
+    
+    .main-footer {
+        padding: 3rem 0 1.5rem !important;
     }
     
     .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
     }
     
     .footer-bottom {
@@ -1958,6 +2022,39 @@ a:hover {
     }
     
     /* Alignment fixes for very small mobile screens */
+    .container {
+        padding-right: 1rem !important;
+        padding-left: 1rem !important;
+    }
+
+    .quick-info-grid {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+    }
+
+    .card-footer {
+        flex-direction: column !important;
+        gap: 0.5rem !important;
+    }
+
+    .add-to-quote-btn, .quick-wa-btn {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center;
+    }
+
+    .map-action-bar {
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center;
+        gap: 0.75rem !important;
+    }
+
+    .map-action-bar a {
+        width: 100% !important;
+        text-align: center;
+    }
+
     .contact-card {
         flex-direction: column !important;
         align-items: center !important;
