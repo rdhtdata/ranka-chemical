@@ -81,7 +81,7 @@ body::before {
     transform: translate(-50%, -50%);
     width: 70vmin;
     height: 70vmin;
-    background-image: url('images/brand icon.PNG');
+    background-image: url('images/brand_icon.svg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -497,13 +497,36 @@ a:hover {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
 }
 
 .hero-content {
-    max-width: 780px;
     color: var(--text-white);
+}
+
+.hero-graphic-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero-large-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+    filter: drop-shadow(0 10px 30px rgba(49, 101, 146, 0.25)) drop-shadow(0 0 50px rgba(49, 101, 146, 0.15));
+    animation: floatLogo 6s ease-in-out infinite;
+}
+
+@keyframes floatLogo {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(2deg); }
+    100% { transform: translateY(0px) rotate(0deg); }
 }
 
 .badge-sd-fine {
@@ -1729,6 +1752,15 @@ a:hover {
 
 /* Tablet Viewports */
 @media (max-width: 1024px) {
+    .hero-container {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 2rem;
+    }
+    
+    .hero-large-logo {
+        max-height: 280px;
+    }
+
     .hero-title {
         font-size: 3rem;
     }
@@ -1901,6 +1933,26 @@ a:hover {
         min-height: 80vh;
         padding-top: calc(var(--header-height) + 1.5rem);
         padding-bottom: 5rem;
+    }
+    
+    .hero-container {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+        text-align: center !important;
+    }
+    
+    .hero-large-logo {
+        max-height: 220px !important;
+        margin: 0 auto;
+        order: 2;
+    }
+    
+    .hero-content {
+        order: 1;
+    }
+    
+    .badge-sd-fine {
+        justify-content: center !important;
     }
     
     .hero-title {
